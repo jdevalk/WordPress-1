@@ -46,7 +46,7 @@ class WP_Debug_Data {
 		$core_version           = get_bloginfo( 'version' );
 		$core_updates           = get_core_updates();
 		$core_update_needed     = '';
-		$environment_type.      = wp_get_environment_type();
+		$environment_type       = wp_get_environment_type();
 
 		foreach ( $core_updates as $core => $update ) {
 			if ( 'upgrade' === $update->response ) {
